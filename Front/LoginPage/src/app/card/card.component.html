@@ -1,0 +1,10 @@
+<div>
+    <p>Login:</p>
+    <input class="form-control" type="text" name="login" [(ngModel)]="user.login" />
+    <p>Password:</p>
+    <input class="form-control" type="text" name="password" [(ngModel)]="user.password" />
+    <p>
+        <button (click)="submit(user)">Sign in</button>
+    </p>
+    <p>{{ response.message }}</p>
+</div>
